@@ -1,7 +1,10 @@
 import { users } from '../db';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 
 function Home() {
+    // useSearchParams는 파라미터를 읽거나 수정할 수 있다.
+    const [readSearchParms, setSearchParams] = useSearchParams();
+
     return (
         <div>
             <ul>
